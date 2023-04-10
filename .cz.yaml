@@ -6,4 +6,5 @@ commitizen:
   version_files:
   - gradle.properties
   - version.txt
+  - package.json
   - .cz.yaml:version
