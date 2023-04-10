@@ -1,3 +1,9 @@
+## 0.3.3 (2023-04-09)
+
+### Fix
+
+- **config**: initial configuration
+
 ## 0.3.2 (2023-04-09)
 
 ### Fix
