@@ -2,7 +2,7 @@
 commitizen:
   name: cz_conventional_commits
   tag_format: $version
-  version: 0.3.0
+  version: 0.3.1
   version_files:
   - gradle.properties
   - .cz.yaml:version
