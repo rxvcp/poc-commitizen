@@ -18,7 +18,9 @@ jobs:
       - name: Install dependencies
         run: |
           pip install commitizen
-          pip install -r requirements.txt
+      - name: Bump version
+        run: |
+          cz bump --changelog --yes
       - name: Commit changes
         run: |
           git add .
