@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+      - name: Install dependencies
+        run: |
+          pip install commitizen
+          pip install -r requirements.txt
+      - name: Commit changes
+        run: |
+          git add .
+          cz commit --no-verify
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.5.0
+        with:
+          branch: ${{ github.ref }}
+          github_token: ${{ secrets.GH_TOKEN }}
