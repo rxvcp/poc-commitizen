@@ -1,3 +1,10 @@
+## 0.4.1 (2023-04-24)
+
+### Fix
+
+- **config**: change name
+- **config**: change name
+
 ## 0.4.0 (2023-04-23)
 
 ### Feat
