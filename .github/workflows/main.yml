@@ -31,8 +31,8 @@ jobs:
           cz bump --changelog --yes
       - name: Commit changes
         run: |
-          git add .
-          cz commit --no-verify
+          git push
+          git push --tags
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
