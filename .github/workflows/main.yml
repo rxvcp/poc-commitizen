@@ -30,7 +30,7 @@ jobs:
         run: |
           git config --global user.email "rxvallejoc@gmail.com"
           git config --global user.name "Rodrigo Vallejo"
-          cz bump --changelog --yes
+          cz bump --changelog --yes --tag-format="poc-commitizen-$version"
       - name: Commit changes
         run: |
           git push
