@@ -8,6 +8,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+      id-token: write # to enable use of OIDC for npm provenance
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -26,7 +31,7 @@ jobs:
           git add .
           cz commit --no-verify
       - name: Push changes
-        uses: ad-m/github-push-action@v0.5.0
+        uses: ad-m/github-push-action@v0.6.0
         with:
           branch: ${{ github.ref }}
           github_token: ${{ secrets.GH_TOKEN }}
