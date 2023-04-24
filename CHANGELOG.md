@@ -4,6 +4,13 @@
 
 - **github**: add tag component name (#2)
 
+## poc-commitizen-0.6.0 (2023-04-24)
+
+### Fix
+
+- **github**: add tag component name
+- **github**: add tag component name (#2)
+
 ## 0.4.2 (2023-04-24)
 
 ### Fix
