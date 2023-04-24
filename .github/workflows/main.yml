@@ -28,6 +28,8 @@ jobs:
           pip install commitizen
       - name: Bump version
         run: |
+          git config --global user.email "rxvallejoc@gmail.com"
+          git config --global user.name "Rodrigo Vallejo"
           cz bump --changelog --yes
       - name: Commit changes
         run: |
