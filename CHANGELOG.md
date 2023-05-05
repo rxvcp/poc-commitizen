@@ -4,6 +4,12 @@
 
 - **github**: add tag component name (#2)
 
+## 0.7.1 (2023-05-05)
+
+### Fix
+
+- **readme**: readme
+
 ## 0.7.0 (2023-04-27)
 
 ### Feat
